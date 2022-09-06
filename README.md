@@ -41,7 +41,7 @@
 ## Get Started
 - Simply run [main.m](main.m)
 - Beyond that you're unfortunately on your own, but in general I'm happy to answer question. Contact me.
-- (The code is not pretty, but I think there are some neat ideas / implementations used in [heatacc](/functions/heatacc.m) and [get2D_Distributed_Heatkernels](/functions/get2D_Distributed_Heatkernels.m).
+- The code is not pretty, but I think there are some neat ideas / implementations used in [heatacc](/functions/heatacc.m) and [get2D_Distributed_Heatkernels](/functions/get2D_Distributed_Heatkernels.m).
 
 ## Why wasn't this used?
 - Unfortunately both the drilling progress as well as the energy distribution (i.e. absorbed energy over the borehole depth resulting in the temperature increase) is unknown.
