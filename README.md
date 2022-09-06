@@ -21,17 +21,21 @@
 - Gaussian / "donut" source: Lateral extent of source can be time-dependent.
 - In conclusion: The implementation is flexible enough to provide (in theory) a useful and fast approximation of heat accumulation in ultrafast laser processes - in particular percussion drilling.
 
-%% Examples
+## Exanokes
 - Drilling with an energy ramp
+
 ![https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/eramp.mp4](https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/eramp.gif)
 
-- Drilling with a variable pulse repetition rate (chirp)
+- Drilling with a variable pulse repetition rate
+
 ![https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/chirp.mp4](https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/chirp.gif)
 
 - Burst processing
+
 ![https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/burst.mp4](https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/burst.gif)
 
 - Not sure what to call this
+
 ![https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/fun.mp4](https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/fun.gif)
 
 ## Get Started
