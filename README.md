@@ -1,4 +1,4 @@
-# Heat accumulatio in pulsed laser processing (drilling)
+# Heat accumulation in pulsed laser processing (drilling)
 ![](https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/overview.gif)
 
 ## Overview
