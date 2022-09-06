@@ -21,7 +21,7 @@
 - Gaussian / "donut" source: Lateral extent of source can be time-dependent.
 - In conclusion: The implementation is flexible enough to provide (in theory) a useful and fast approximation of heat accumulation in ultrafast laser processes - in particular percussion drilling.
 
-## Exanokes
+## Examples
 - Drilling with an energy ramp
 
 ![https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/eramp.mp4](https://github.com/david-brinkmeier/heatAccumulation/blob/main/resources/media/eramp.gif)
