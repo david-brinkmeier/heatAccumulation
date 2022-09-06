@@ -44,6 +44,6 @@
 - The code is not pretty, but I think there are some neat ideas / implementations used in [heatacc](/functions/heatacc.m) and [get2D_Distributed_Heatkernels](/functions/get2D_Distributed_Heatkernels.m).
 
 ## Why wasn't this used?
-- Unfortunately both the drilling progress as well as the energy distribution (i.e. absorbed energy over the borehole depth resulting in the temperature increase) is unknown.
+- Unfortunately both the drilling progress as well as the energy distribution (i.e. absorbed energy over the borehole depth resulting in the temperature increase) is mostly unknown.
 - Even worse: Existing models that estimate the drilling progress are based on considerations (absorbed energy distributions) which are at odds with experimental observations.
-- Determination of the energy distribution is in pulsed drilling is non-trivial and until that problem is solved these calculations are, realistically, nothing more than pretty to look at.
+- Determination of the energy distribution in pulsed drilling is non-trivial and until that problem is solved these calculations are, realistically, nothing more than pretty to look at.
