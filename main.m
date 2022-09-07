@@ -149,7 +149,8 @@ sim.HeatsourceSettings.n_heatsources = 20;
 
 % init
 tcomplete = tic;
-results = cell({}); idx = 0;
+results = cell({}); 
+idx = 0;
 
 % starting here
 idx = idx+1;
@@ -157,42 +158,42 @@ sim.Heatsource = 'point';
 sim.Q_distrib_2D = {'constant'};
 sim.Heatsource2Dsize = {0e-6};
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 idx = idx+1;
 sim.Heatsource = 'gauss';
 sim.Q_distrib_2D = {'constant'};
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
 sim.Heatsource2Dsize = {1e-6.*0.1}; % compare with point source
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 idx = idx+1;
 sim.Heatsource = 'ring';
 sim.Q_distrib_2D = {'constant'};
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
 sim.Heatsource2Dsize = {1e-6.*0.1}; % compare with point source
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 idx = idx+1;
 sim.Heatsource = 'point';
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
 sim.Q_distrib_2D = num2cell(linspace(0.5,1,sim.TotalNoPulses).'.*linspace(0,1,50),2);
 sim.Heatsource2Dsize = {0}; % defines Gaussian / Ringsource "caustic" for / @ each pulse
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 idx = idx+1;
 sim.Heatsource = 'gauss';
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
 sim.Q_distrib_2D = num2cell(linspace(0.5,1,sim.TotalNoPulses).'.*linspace(0,1,50),2);
 sim.Heatsource2Dsize = num2cell(1e-6*linspace(1,50,10).*linspace(1,2,sim.TotalNoPulses).',2); % defines Gaussian / Ringsource "caustic" for / @ each pulse
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 idx = idx+1;
 sim.Heatsource = 'ring';
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
 sim.Q_distrib_2D = num2cell(linspace(0.5,1,sim.TotalNoPulses).'.*linspace(0,1,50),2);
 sim.Heatsource2Dsize = num2cell(1e-6*linspace(1,50,10).*linspace(1,2,sim.TotalNoPulses).',2); % defines Gaussian / Ringsource "caustic" for / @ each pulse
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 % % now switching to variable length heat sources
 %
@@ -203,42 +204,42 @@ sim.Heatsource = 'point';
 sim.Q_distrib_2D = {'constant'};
 sim.Heatsource2Dsize = {0e-6};
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 idx = idx+1;
 sim.Heatsource = 'gauss';
 sim.Q_distrib_2D = {'constant'};
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
 sim.Heatsource2Dsize = {1e-6.*0.1}; % compare with point source
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 idx = idx+1;
 sim.Heatsource = 'ring';
 sim.Q_distrib_2D = {'constant'};
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
 sim.Heatsource2Dsize = {1e-6.*0.1}; % compare with point source
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 idx = idx+1;
 sim.Heatsource = 'point';
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
 sim.Q_distrib_2D = num2cell(linspace(0.5,1,sim.TotalNoPulses).'.*linspace(0,1,50),2);
 sim.Heatsource2Dsize = {0}; % defines Gaussian / Ringsource "caustic" for / @ each pulse
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 idx = idx+1;
 sim.Heatsource = 'gauss';
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
 sim.Q_distrib_2D = num2cell(linspace(0.5,1,sim.TotalNoPulses).'.*linspace(0,1,50),2);
 sim.Heatsource2Dsize = num2cell(1e-6*linspace(1,50,10).*linspace(1,2,sim.TotalNoPulses).',2); % defines Gaussian / Ringsource "caustic" for / @ each pulse
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 %
 idx = idx+1;
 sim.Heatsource = 'ring';
 sim.Heatsource2Dlen = {200e-6.*ones(sim.TotalNoPulses,1)}; % fixed heat source length
 sim.Q_distrib_2D = num2cell(linspace(0.5,1,sim.TotalNoPulses).'.*linspace(0,1,50),2);
 sim.Heatsource2Dsize = num2cell(1e-6*linspace(1,50,10).*linspace(1,2,sim.TotalNoPulses).',2); % defines Gaussian / Ringsource "caustic" for / @ each pulse
-results{idx,1} = heataccumulation_3d_lines_v2(laser,mat,sim);
+results{idx,1} = heatacc(laser,mat,sim);
 % write complete calculation time
 results{idx+1,1} = toc(tcomplete);
 %}
